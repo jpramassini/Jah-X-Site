@@ -1,0 +1,110 @@
+/*!
+ * Jah X Media.com Stylesheet
+ * Written by JP Ramassini
+ */
+
+ /*
+  * Fonts In Use Reference
+  * Mr Dafoe: font-family: 'Mr Dafoe', cursive;
+  *
+  */
+
+* {
+  box-sizing: border-box;
+}
+
+.video-background {
+  background: #000;
+  position: absolute;
+  top:0; right: 0; bottom:0; left: 0;
+  z-index: -99;
+}
+
+ .video-foreground, .video-background iframe{
+   position: absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   pointer-events: none;
+ }
+
+ .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+ .hero-title{
+   position: relative;
+   align-content: center;
+   margin:auto;
+   font-family: 'Mr Dafoe', cursive;
+   font-size: 30vw;
+   color:#A4AEB7;
+ }
+
+ .center {
+   position:absolute;
+   top:50%;
+   left:50%;
+   width: 60%;
+   text-align: center;
+ }
+
+ .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+ /* MEDIA QUERIES */
+ @media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+
+/*For desktop users*/
+@media (min-width : 1200px){
+
+  .center{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    width: 60%;
+    font-size: 30vw;
+    transform: translate(-50%,-27.5%);
+    text-align: center;
+  }
+
+}
+
+/*For tablet users*/
+@media (min-width : 850px){
+  .center{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    width: 60%;
+    font-size:30vw;
+    transform: translate(-50%, -27.5%);
+    text-align: center;
+  }
+}
+
+/*For mobile users*/
+@media (min-width : 600px){
+  .center{
+
+  }
+}
