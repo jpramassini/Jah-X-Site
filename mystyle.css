@@ -5,13 +5,15 @@
 
  /*
   * Fonts In Use Reference
-  * Mr Dafoe: font-family: 'Mr Dafoe', cursive;
+  * font-family: 'Cutive Mono', monospace;
   *
   */
 
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
+
 
 .video-background {
   background: #000;
@@ -29,30 +31,20 @@
    pointer-events: none;
  }
 
- .noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
-}
-
  .hero-title{
-   position: relative;
+   position: absolute;
+   display: block;
    align-content: center;
+   height:90%;
+   width:100%;
    margin:auto;
-   font-family: 'Mr Dafoe', cursive;
-   font-size: 30vw;
    color:#A4AEB7;
  }
 
  .center {
    position:absolute;
    top:50%;
-   left:50%;
-   width: 60%;
+   width: inherit;
    text-align: center;
  }
 
@@ -77,14 +69,58 @@
 /*For desktop users*/
 @media (min-width : 1200px){
 
-  .center{
-    position:absolute;
-    top: 50%;
-    left:50%;
-    width: 60%;
-    font-size: 30vw;
-    transform: translate(-50%,-27.5%);
+/*Desktop Nav CSS*/
+  nav {
+    position:fixed;
+    top:0;
+    left:0;
+    padding:0;
+    margin:0;
+    width:100%
+  }
+
+  ul {
+   position:fixed;
+   clear:both;
+   top:0;
+   left:0;
+   width:100%;
+   z-index: 100;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow:hidden;
+   background-color:#72A4BF;
+  }
+
+  li {
+    float:right;
+  }
+
+  li a{
+    display: block;
+    color:white;
     text-align: center;
+    padding: 14px 16px;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 3vw;
+    text-decoration: none;
+  }
+
+
+  .center{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height:auto;
+    transform: translate(-50%, -45%);
+    text-align: center;
+  }
+
+  #landing-image{
+    height:auto;
+    padding: 0px;
   }
 
 }
@@ -95,16 +131,19 @@
     position:absolute;
     top: 50%;
     left:50%;
-    width: 60%;
+    width: 100%;
     font-size:30vw;
     transform: translate(-50%, -27.5%);
-    text-align: center;
+  }
+
+  #landing-image{
+    height:auto;
   }
 }
 
 /*For mobile users*/
-@media (min-width : 600px){
+@media (max-width : 849px){
   .center{
-
+    display:none;
   }
 }
