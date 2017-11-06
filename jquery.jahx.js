@@ -11,13 +11,11 @@ $(function(){
          "o-filter":"blur("+blurVal +"px)",
          "filter":"blur("+blurVal +"px)"});
   });
-  //end of Blur function
 
-  $(".menu-btn").click(function(event){
-    event.preventDefault();
-    $("nav").toggleClass("menushow");
+  $(".toggle-nav").on("click", function(){
 
+    $(".menu").toggle();
 
   });
-
+  //end of Blur function
 });

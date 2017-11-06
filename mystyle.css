@@ -58,6 +58,24 @@
                                   supported by Chrome and Opera */
 }
 
+.toggle-nav{
+  position: fixed;
+  padding-left: 2%;
+  padding-top: 2%;
+  color:white;
+  z-index: 101;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+.hide-menu{
+  display: none;
+}
+
+.show-menu{
+
+}
+
  /* MEDIA QUERIES */
  @media (min-aspect-ratio: 16/9) {
   .video-foreground { height: 300%; top: -100%; }
@@ -70,41 +88,50 @@
 @media (min-width : 1200px){
 
 /*Desktop Nav CSS*/
-  nav {
+  .toggle-nav{
+    font-size: 3em;
+  }
+
+  .up-arrow{
     position:fixed;
-    top:0;
-    left:0;
-    padding:0;
-    margin:0;
-    width:100%
+    top: 11vh;
+    left: 3vw;
+    width: 30px;
+    height: 30px;
+    border-bottom: solid 15px rgba(255,255,255, 0.7);
+    border-left: solid 15px transparent;
+    border-right: solid 15px transparent;
+    display:none;
   }
 
   ul {
    position:fixed;
-   clear:both;
-   top:0;
-   left:0;
-   width:100%;
+   top:15vh;
+   left:1vw;
+   width:20%;
    z-index: 100;
-   list-style-type: none;
    margin: 0;
    padding: 0;
    overflow:hidden;
-   background-color:#72A4BF;
+   background:rgba(255,255,255, 0.7);
+   border-radius: 5px;
   }
 
-  li {
-    float:right;
-  }
 
-  li a{
-    display: block;
+
+  li{
+
     color:white;
     text-align: center;
     padding: 14px 16px;
     font-family: 'Cutive Mono', monospace;
     font-size: 3vw;
     text-decoration: none;
+  }
+
+  a {
+    text-decoration:none;
+    color: white;
   }
 
 
@@ -136,6 +163,10 @@
     transform: translate(-50%, -27.5%);
   }
 
+  .toggle-nav{
+    font-size:3em;
+  }
+
   #landing-image{
     height:auto;
   }
@@ -145,5 +176,9 @@
 @media (max-width : 849px){
   .center{
     display:none;
+  }
+
+  .toggle-nav{
+    font-size: 3em;
   }
 }
