@@ -17,11 +17,12 @@ jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="animate.css">
 <!--Font Linking-->
 <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300i" rel="stylesheet">
 </head>
 
 <body>
 
-  <span class = "toggle-nav">
+  <span class = "toggle-nav toggler">
     <a>&#9776;</a>
   </span>
 
@@ -29,15 +30,15 @@ jquery/3.2.1/jquery.min.js"></script>
 
     <nav>
           <ul class="hide-menu menu">
-            <li><a href="#">top</a></li>
-            <li><a href="#">music</a></li>
-            <li><a href="#">about</a> </li>
-            <li><a href="#">contact</a></li>
+            <li><a class = "toggler" href="#page-1">top</a></li>
+            <li><a class = "toggler" href="#page-2">music</a></li>
+            <li><a class = "toggler" href="#page-3">about</a> </li>
+            <li><a class = "toggler" href="#page-4">contact</a></li>
           </ul>
 
     </nav>
 
-
+<div id="page-1">
     <div class = "video-background">
       <div class = "video-foreground">
         <iframe id="vidFrame" src="https://www.youtube.com/embed/1ce48SW41UE?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1&loop=1&mute=1"
@@ -54,6 +55,24 @@ jquery/3.2.1/jquery.min.js"></script>
 
   </div>
 
+    <div id="page-2">
+      <div class="title-wrapper">
+        <p class="page-title">
+          music
+        </p>
+      <div class="soundcloud-wrapper">
+        <iframe id="soundcloud-1" width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/314093951&amp;color=%2372a4bf&amp;auto_play=false&amp;hide_related=true&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+      </div>
+      </div>
+    </div>
+
+    <div id="page-3">
+
+    </div>
+
+    <div id="page-4">
+
+    </div>
 </body>
 
 </html>
