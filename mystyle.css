@@ -3,7 +3,7 @@
  * Written by JP Ramassini
  */
 
- /*
+ /*!
   * Fonts In Use Reference
   * font-family: 'Cutive Mono', monospace;
   * font-family: 'Lato', sans-serif;
@@ -12,6 +12,9 @@
 * {
   box-sizing: border-box;
   overflow-x: hidden;
+}
+body{
+  margin:0;
 }
 
 
@@ -99,9 +102,8 @@
   padding:0;
   width:105%;
   height:100vh;
-  top:100vh;
   left:0;
-  clear:both;
+  /*clear:both;*/
   border-top:50px #F6F7F0;
   background-color: #F6F7F0;
 }
@@ -127,15 +129,21 @@
 
 /*For desktop users*/
 @media (min-width : 1200px){
+  #music-pic-1{
+    position: absolute;
+    width:50%;
+    height:100vh;
+    max-height: 100%;
+    max-width: 100%;
+  }
 
-/*Desktop Nav CSS*/
   .toggle-nav{
     font-size: 3em;
   }
 
   .up-arrow{
     position:fixed;
-    top: 80px;
+    top: 95px;
     left: 3vw;
     width: 30px;
     height: 30px;
@@ -147,7 +155,7 @@
 
   ul {
    position:fixed;
-   top:110px;
+   top:125px;
    left:1vw;
    width:200px;
    z-index: 100;
@@ -170,6 +178,10 @@
     text-decoration: none;
   }
 
+  li:hover{
+    background: rgba(100,166,194, 0.6);
+  }
+
   li a{
     text-decoration:none;
     color: #090909;
@@ -177,19 +189,23 @@
 
   .page-title{
     font-family: 'Cutive Mono', monospace;
+    transform: rotate(90deg);
     color:#090909;
     font-size: 8.5vw;
     text-align: left;
-    width:33%;
+    width:auto;
     height:auto;
-    display: inline;
-    vertical-align:top;
-    padding-left: 10vw;
+    padding: 0;
+    padding-left: 200px;
+    margin: 0;
+    z-index:50;
+    overflow-x: visible;
   }
 
   .title-wrapper{
-    width:100%;
-    height:300px;
+    height:100vh;
+    width: 20vw;
+    float: left;
   }
 
   .center{
