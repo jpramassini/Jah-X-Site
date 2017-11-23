@@ -9,23 +9,77 @@
     <meta name="description" content="Official site for rapper and artist Jah X">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Scripts-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="easings.js"></script>
-    <script type="text/javascript" src="jquery.jahx.js"></script>
+    <script type="text/javascript" src="jahx.js"></script>
     <!--CSS Stylesheets-->
     <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
     <!--Font Linking-->
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300i" rel="stylesheet">
 </head>
 <body>
     <div id = "page-2">
+
+                  <div class = "header">
+                    <span onclick="menuHider()" class = "toggle-nav toggler">
+                                <a>&#9776;</a>
+                              </span>
+                   <img class= "header-image" src="image.png" alt="Jah X Media">
+                  </div>
+                
+                  <nav class = "hide-menu" id = "menu" style= "display: none">
+                  <div class="up-arrow"></div>
+                          <ul class="noselect">
+                            <li><a onclick="menuHider()" href="index.html">home</a></li>
+                            <li><a onclick="menuHider()" href="photos.html">music</a></li>
+                            <li><a onclick="menuHider()" href="photos.html">photos</a> </li>
+                            <li><a onclick="menuHider()" href="#page-4">contact</a></li>
+                          </ul>
+                
+                    </nav>
+                     
         <div class="title-wrapper">
             <p class="page-title">
               photos
             </p>
         </div>
+
+        <div class= "content">
+            
+                <a href="Assets/black-wave-1.jpg" data-fancybox data-caption""><div class ="photos photos-left"><img src="Assets/black-wave-1.jpg"></div></a>
+                <a href="Assets/black-wave-2.jpg" data-fancybox data-caption""><div class ="photos photos-mid-left"><img src="Assets/black-wave-2.jpg"></div></a>
+                <a href="Assets/orange-jacket.jpg" data-fancybox data-caption" "><div class ="photos photos-mid-right"><img src="Assets/orange-jacket.jpg"></div></a>
+                <a href="Assets/makeup.jpg" data-fancybox data-caption" "><div class="photos photos-right"><img src ="Assets/makeup.jpg"></div></a>
+
+                <a href="Assets/color.jpg" data-fancybox data-caption" "><div class ="photos photos-left"><img src="Assets/color.jpg"></div></a>
+                <a href="Assets/dubaiPic.jpeg" data-fancybox data-caption" "><div class ="photos photos-mid-left"><img src="Assets/dubaiPic.jpeg"></div></a>
+                <a href="Assets/performing1.jpg" data-fancybox data-caption" "><div class ="photos photos-mid-right"><img src="Assets/performing1.jpg"></div></a>
+                <a href="Assets/redCamo1.jpg" data-fancybox data-caption" "><div class="photos photos-right"><img src ="Assets/redCamo1.jpg"></div></a>
+
+                <a href="Assets/redCamo2.jpg" data-fancybox data-caption" "><div class="photos photos-left"><img src="Assets/redCamo2.jpg"></div></a>
+                <a href="Assets/yellow-wall.jpg" data-fancybox data-caption" "><div class="photos photos-mid-left"><img src="Assets/yellow-wall.jpg"></div></a>
+                <a href="Assets/black-wave-4.jpg" data-fancybox data-caption" "><div class ="photos photos-mid-right"><img src="Assets/black-wave-4.jpg"></div></a>
+                <a href="Assets/black-wave-3.jpg" data-fancybox data-caption" "><div class="photos photos-right"><img src ="Assets/black-wave-3.jpg"></div></a>
+
+                <a href="Assets/blue-red-plaid.jpg" data-fancybox data-caption" "><div class="photos photos-left"><img src="Assets/blue-red-plaid.jpg"></div></a>
+                <a href="Assets/bricks.jpg" data-fancybox data-caption" "><div class="photos photos-mid-left"><img src="Assets/bricks.jpg"></div></a>
+                <a href="Assets/car-BW.jpg" data-fancybox data-caption" "><div class ="photos photos-mid-right"><img src="Assets/car-BW.jpg"></div></a>
+                <a href="Assets/car-BW-2.jpg" data-fancybox data-caption" "><div class="photos photos-right"><img src ="Assets/car-BW-2.jpg"></div></a>
+
+                <a href="Assets/cityBW.jpg" data-fancybox data-caption" "><div class="photos photos-left"><img src="Assets/cityBW.jpg"></div></a>
+                <a href="Assets/edi1.jpg" data-fancybox data-caption" "><div class="photos photos-mid-left"><img src="Assets/edi1.jpg"></div></a>
+                <a href="Assets/edii.jpg" data-fancybox data-caption" "><div class ="photos photos-mid-right"><img src="Assets/edii.jpg"></div></a>
+                <a href="Assets/fence.jpg" data-fancybox data-caption" "><div class="photos photos-right"><img src ="Assets/fence.jpg"></div></a>
+
+                <a href="Assets/hoop.jpg" data-fancybox data-caption" "><div class="photos photos-left"><img src="Assets/hoop.jpg"></div></a>
+                <a href="Assets/multi-redbuilding.jpg" data-fancybox data-caption" "><div class="photos photos-mid-left"><img src="Assets/multi-redbuilding.jpg"></div></a>
+                <a href="Assets/smoke-1.jpg" data-fancybox data-caption" "><div class ="photos photos-mid-right"><img src="Assets/smoke-1.jpg"></div></a>
+                <a href="Assets/street-jacket.jpg" data-fancybox data-caption" "><div class="photos photos-right"><img src ="Assets/street-jacket.jpg"></div></a>
+
+   </div>
     </div>
+            <!--FancyBox Things-->
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 </body>
 </html>
