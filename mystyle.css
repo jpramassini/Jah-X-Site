@@ -321,10 +321,27 @@ ul {
 
 #page-3{
   height:100vh;
+  background-color: #F6F7F0;
 }
 
 #page-4{
   height:100vh;
+}
+
+.soundcloud{
+  margin: 10px auto;
+  margin-left: 3.5vw;
+  width: 33vw;
+  height: 33vw;
+}
+
+.youtube-player{
+  width: 69.8vw;
+  height: 39.26vw;
+  position: relative;
+  margin: 10px auto;
+  margin-left: 3.5vw;
+  
 }
 
  /* MEDIA QUERIES */
@@ -439,6 +456,8 @@ ul {
 
   .content{
     margin-top: 85px;
+    height: auto;
+    overflow-y: hidden;
   }
 
   #landing-image{
@@ -453,6 +472,10 @@ ul {
   #page-2{
     width: 105vw;
   }
+
+  #page-3{
+    width: 105vw;
+  }
   .center{
     width: 70%;
     overflow-x: visible;
@@ -463,6 +486,7 @@ ul {
   
   .content{
     margin-top:80px;
+    height: auto;
   }
 
   .header{
@@ -520,4 +544,19 @@ ul {
     height: 70vw;
     object-fit: cover;
   }
+
+  .soundcloud{
+    margin: 10px auto;
+    margin-left: 3vw;
+    width: 70vw;
+    height: 40vw;
+  }
+  
+  .youtube-player{
+    width: 70vw;
+    position: relative;
+    margin: 10px auto;
+    margin-left: 3vw;
+  }
+
 }
