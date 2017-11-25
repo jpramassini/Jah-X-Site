@@ -185,10 +185,9 @@ body{
 }
 .title-wrapper{
   height:100vh;
-  width: 15vw;
+  width: 13vw;
   float: left;
   position: sticky;
-  top: 200px;
 }
 .toggle-nav{
   font-size: 3em;
@@ -531,8 +530,7 @@ ul {
 
   .title-wrapper{
     width:20vw;
-    position: fixed sticky;
-    top: 10px;
+    position:sticky;
   }
 
   .page-title{
